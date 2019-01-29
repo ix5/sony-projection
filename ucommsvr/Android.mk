@@ -28,7 +28,7 @@ LOCAL_MODULE := ucommsvr
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := sony
 LOCAL_INIT_RC_64   := vendor/etc/init/ucommsvr.rc
-LOCAL_PROPRIETARY_MODULE := true
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
@@ -37,7 +37,7 @@ LOCAL_SHARED_LIBRARIES := liblog libcutils
 LOCAL_MODULE := ucomm_autofocus_test
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := sony
-LOCAL_PROPRIETARY_MODULE := true
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
@@ -49,6 +49,6 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_MODULE := libucommunicator
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := sony
-LOCAL_PROPRIETARY_MODULE := true
+LOCAL_VENDOR_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
